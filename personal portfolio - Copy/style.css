@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.typing-text {
+  border-right: 2px solid #fff;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+:root{
+    --dark-black: #030303;
+    --pure-white: #ffffff;
+    --sky-blue: #0D6EFD;
+    --grey: #686868;
+
+    --h1-font: 7rem;
+    --h2-font: 3.2rem;
+    --h3-font: 2.8rem;
+    --h4-font: 2.4rem;
+    --font-20px: 2rem;
+    --h5-font: 1.8rem;
+    --p-font: 1.2rem;
+
+    --font-segoe-UI: 'Segoe UI';
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+.dark-black{
+    background-color: var(--dark-black);
+}
+.dark-black-text{
+    color: var(--dark-black);
+}
+.fw-600{
+    font-weight: 600;
+}
+
+.grey-clr{
+    color: var(--grey);
+}
+h1{
+    font-size: var(--h1-font);
+   
+}
+h2{
+    font-size: var(--h2-font);
+   
+}
+h3{
+    font-size: var(--h3-font);
+   
+}
+h4{
+    font-size: var(--h4-font);
+   
+}
+h5{
+    font-size: var(--h5-font);
+   
+}
+h6{
+    font-size: var(--font-20px);
+   
+}
+p,.p-font-size{
+    font-size: var(--p-font);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+h2{
+    font-size: var(--h2-font);
+   
+}
+.segoe-font{
+    font-family: var(--font-segoe-UI);
+}
+.mt-100{
+    margin-top: 10rem;
+}
+.nav-link{
+    font-size: var(--p-font);
+    padding: 1rem 0.2rem ;
+    position: relative;
+
+
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+     bottom: 0; 
+    height: 0.15rem;
+    background-color: var(--pure-white);
+    left: 0%;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+   
+}
+.nav-link:hover::before,.nav-link.active::before{
+    visibility: visible;
+    bottom: 0;
+    width: 100%;
+}
+.navbar-toggler .fa-solid.fa-bars{
+    color: var(--pure-white);
+    font-size: 3rem;
+}
+.hero-section {
+    background-image: url("IMG_5923.PNG");
+    background-color: var(--dark-black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -5rem ;
+    z-index: 1;
+    height: 86vh;
+    
+}
+.hero-section-overlay{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+ background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.8)
+    );
+
+z-index: -1;
+}
+@media (max-width: 400px) {
+  header {
+       background-position: 90px center;  /* Center the image */
+  }
+}
+
